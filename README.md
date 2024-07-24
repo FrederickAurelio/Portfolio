@@ -1,5 +1,7 @@
 # My Portfolio Website
 
 Built using Vite React with TailwindCSS and GSAP
-👉 https://vercel.com/frederick-aurelio-halims-projects
+
+👉 https://portfolio-three-wine-39.vercel.app/
+
 👉 http://120.26.45.50/
