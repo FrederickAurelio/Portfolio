@@ -59,7 +59,7 @@ export const projects = {
     {
       img: "./fxtrade.jpg",
       refMore: "#fxtrade",
-      refSite: "http://120.26.45.50/forex/",
+      refSite: "https://fx-trade-gamma.vercel.app/forex/",
       title: {
         en: `FXTrade (Landing Page & Web App)`,
         ch: "FXTrade (登陆页 & Web应用程序)"
