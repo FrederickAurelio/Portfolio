@@ -43,26 +43,12 @@ export const projects = {
   },
   projects: [
     {
-      img: "./bookling.jpg",
-      refMore: "#bookling",
-      refSite: "http://120.26.45.50:8080/",
-      title: {
-        en: "📕Bookling (Web App)",
-        ch: "📕Bookling (Web应用程序)"
-      },
-      vpn: false,
-      desc: {
-        en: "Bookling is a web application that allows users to sign up, log in, and post book information to share with others. Users can search, sort, and filter books according to their preferences and save their favorite books. Users can also view which books others favour.",
-        ch: "Bookling 是一个网络应用程序, 允许用户注册、登录并发布书籍信息与他人分享。用户可以根据自己的偏好搜索、排序和筛选书籍，并保存自己喜欢的书籍。用户还可以查看其他人喜欢的书籍。"
-      }
-    },
-    {
-      img: "./fxtrade.jpg",
+      img: "./fxtrade.png",
       refMore: "#fxtrade",
-      refSite: "https://fx-trade-gamma.vercel.app/forex/",
+      refSite: "https://nextjs-fx-trade.vercel.app/",
       title: {
-        en: `FXTrade (Landing Page & Web App)`,
-        ch: "FXTrade (登陆页 & Web应用程序)"
+        en: `FXTrade (Landing Page & Web App) - Nextjs`,
+        ch: "FXTrade (登陆页 & Web应用程序) - Nextjs"
       },
       vpn: true,
       desc: {
@@ -71,12 +57,26 @@ export const projects = {
       }
     },
     {
+      img: "./bookling.jpg",
+      refMore: "#bookling",
+      refSite: "http://120.26.45.50:8080/",
+      title: {
+        en: "📕Bookling (Web App) - React",
+        ch: "📕Bookling (Web应用程序) - React"
+      },
+      vpn: false,
+      desc: {
+        en: "Bookling is a web application that allows users to sign up, log in, and post book information to share with others. Users can search, sort, and filter books according to their preferences and save their favorite books. Users can also view which books others favour.",
+        ch: "Bookling 是一个网络应用程序, 允许用户注册、登录并发布书籍信息与他人分享。用户可以根据自己的偏好搜索、排序和筛选书籍，并保存自己喜欢的书籍。用户还可以查看其他人喜欢的书籍。"
+      }
+    },
+    {
       img: "./wildoasis.jpg",
       refMore: "#wildoasis",
       refSite: "https://the-wild-oasis-two-murex.vercel.app/",
       title: {
-        en: `The Wild Oasis (Web App)`,
-        ch: "The Wild Oasis (Web应用程序)"
+        en: `The Wild Oasis (Web App) - React`,
+        ch: "The Wild Oasis (Web应用程序) - React"
       },
       vpn: true,
       desc: {
@@ -89,8 +89,8 @@ export const projects = {
       refMore: "#promis",
       refSite: "https://promischain.com/",
       title: {
-        en: `Promis Chain (Company Profile)`,
-        ch: "Promis Chain (公司简介)"
+        en: `Promis Chain (Company Profile) - HTML/CSS/JS`,
+        ch: "Promis Chain (公司简介) - HTML/CSS/JS"
       },
       vpn: true,
       desc: {
@@ -107,8 +107,8 @@ export const stacks = [
     path: "./js.svg"
   },
   {
-    name: "Vite",
-    path: "./vite.svg"
+    name: "Nextjs",
+    path: "./nextjs.svg"
   },
   {
     name: "react",
@@ -117,6 +117,14 @@ export const stacks = [
   {
     name: "tailwindCSS",
     path: "./tailwindcss.svg"
+  },
+  {
+    name: "Vite",
+    path: "./vite.svg"
+  },
+  {
+    name: "Supabase",
+    path: "./supabase.svg"
   },
   {
     name: "gsap",
@@ -151,6 +159,29 @@ export const details = {
   },
   details: [
     {
+      color: "border-emerald-700 bg-emerald-50",
+      logo: "fxtrade",
+      github: "https://github.com/FrederickAurelio/Nextjs-FXTrade",
+      list: {
+        en: [
+          "Developed the application using Next.js 14 with the App Router.",
+          "Gained experience with Supabase backend services for server-side functionality.",
+          "Integrated GitHub OAuth for user authentication.",
+          "Mastered responsive design across multiple platforms using Tailwind CSS.",
+          "Ensured real-time, accurate balance verification on the server to prevent potential exploits.",
+          "Configure Row-Level Security (RLS) to restrict database modifications to the server, enhancing security against unauthorized transactions."
+        ],
+        ch: [
+          "使用 Next.js 14 和 App Router 开发了应用程序。",
+          "掌握了 Supabase 后端服务的服务器端功能。",
+          "集成了 GitHub OAuth 进行用户身份验证。",
+          "掌握了使用 Tailwind CSS 跨多个平台的响应式设计。",
+          "确保服务器端的实时、准确的余额验证，防止潜在漏洞。",
+          "配置了行级安全性（RLS），将数据库修改限制在服务器端，增强了防止未经授权交易的安全性。"
+        ],
+      }
+    },
+    {
       color: "border-rose-700 bg-rose-50",
       logo: "bookling",
       github: "https://github.com/FrederickAurelio/Bookling",
@@ -168,29 +199,6 @@ export const details = {
           "协同设计系统功能，包括喜欢/不喜欢书籍、查看用户资料以及显示用户帖子。",
           "使用React Query中的无限查询实现无限滚动。",
           "使用Axios处理HTTP请求。"]
-      }
-    },
-    {
-      color: "border-emerald-700 bg-emerald-50",
-      logo: "fxtrade",
-      github: "https://github.com/FrederickAurelio/FXTrade",
-      list: {
-        en: [
-          "Animated landing page with GSAP.",
-          "Implemented responsive design across various platforms using Tailwind CSS, becoming familiar with it",
-          "Learned how to use LeanCloud backend services.",
-          "Managed chart data with limited multiple fetching data API.",
-          "Represented data using third-party chart libraries.",
-          "Performed calculations involving large sets of numbers."
-        ],
-        ch: [
-          "使用GSAP实现动画登陆页。",
-          "使用Tailwind CSS在各种平台上实现响应式设计，并熟悉其使用。",
-          "学习使用LeanCloud后端服务。",
-          "使用有限的多重数据获取API管理图表数据。",
-          "使用第三方图表库展示数据。",
-          "进行涉及大量数据的计算。"
-        ]
       }
     },
     {

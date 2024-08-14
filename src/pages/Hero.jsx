@@ -78,10 +78,10 @@ function Hero() {
           </h1>
           <p
             id="title"
-            className="w-[40ch] text-base text-sky-800 md:w-[50ch] md:text-2xl"
+            className="w-[44ch] text-base text-sky-800 md:w-[55ch] md:text-2xl"
           >
             {hero[language].hero.subTitle[0]}
-            <span className="font-bold text-sky-500"> React </span>
+            <span className="font-bold text-sky-500"> Nextjs/React </span>
             {hero[language].hero.subTitle[1]}
           </p>
         </div>

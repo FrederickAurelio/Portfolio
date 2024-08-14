@@ -48,7 +48,7 @@ function TechStack() {
           <p id="spin">⚙️</p>
           <p>{language === "en" ? "Tech Stack" : "技术栈"}</p>
         </h1>
-        <div className="flex w-full flex-wrap justify-center gap-5 md:gap-10 xl:w-[70%]">
+        <div className="flex w-full flex-wrap justify-center gap-5 md:gap-10 xl:w-[85%]">
           {stacks.map((stack) => (
             <div
               id="icon"
