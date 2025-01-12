@@ -31,7 +31,7 @@ function Projects() {
         <p id="rocket">🚀</p>
         {language === "en" ? "Highlight Projects" : "精选项目"}
       </h1>
-      <div className="grid w-full grid-cols-1 md:grid-cols-2">
+      <div className="grid w-full grid-cols-1 gap-10 md:grid-cols-2">
         {projects.projects.map((project, i) => (
           <Project key={i} project={project} />
         ))}

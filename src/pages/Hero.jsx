@@ -7,6 +7,7 @@ import gsap from "gsap";
 import { useInView } from "react-intersection-observer";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import { useEffect } from "react";
+import SplitText from "../components/SplitText";
 
 function Hero() {
   const { language } = useLanguage();
@@ -64,18 +65,22 @@ function Hero() {
           ref={ref}
           className="flex h-[90%] w-full flex-col items-center justify-center text-center"
         >
-          <p
+          <h1
             id="title"
             className="text-base font-bold uppercase text-sky-800 md:text-2xl"
           >
             {hero[language].hero.name}
-          </p>
-          <h1
-            id="title"
-            className="pb-1 text-5xl font-bold text-sky-600 md:pb-3 md:text-6xl lg:text-7xl"
-          >
-            {hero[language].hero.title}
           </h1>
+          <SplitText
+            text={hero[language].hero.title}
+            className="pb-1 text-5xl font-bold text-sky-600 md:pb-3 md:text-6xl lg:text-7xl"
+            delay={language === "en" ? 50 : 200}
+            animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
+            animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+            easing="easeOutCubic"
+            threshold={0.2}
+            rootMargin="-50px"
+          />
           <p
             id="title"
             className="w-[44ch] text-base text-sky-800 md:w-[55ch] md:text-2xl"

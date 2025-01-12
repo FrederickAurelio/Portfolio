@@ -107,6 +107,10 @@ export const stacks = [
     path: "./js.svg"
   },
   {
+    name: "Typescript",
+    path: "./typescript.svg"
+  },
+  {
     name: "Nextjs",
     path: "./nextjs.svg"
   },
@@ -123,6 +127,10 @@ export const stacks = [
     path: "./vite.svg"
   },
   {
+    name: "ExpressJs",
+    path: "./express-109.svg"
+  },
+  {
     name: "Supabase",
     path: "./supabase.svg"
   },
@@ -131,20 +139,12 @@ export const stacks = [
     path: "./gsap.svg"
   },
   {
-    name: "React Router",
-    path: "./router.svg"
-  },
-  {
-    name: "React Query",
-    path: "./query.svg"
-  },
-  {
     name: "redux",
     path: "./redux.svg"
   },
   {
-    name: "React Hook Form",
-    path: "./form.svg"
+    name: "React Query",
+    path: "./query.svg"
   },
   {
     name: "Axios",
@@ -160,6 +160,7 @@ export const details = {
   details: [
     {
       color: "border-emerald-700 bg-emerald-50",
+      spotlight: "rgb(4, 120, 87, 0.3)",
       logo: "fxtrade",
       github: "https://github.com/FrederickAurelio/Nextjs-FXTrade",
       list: {
@@ -183,6 +184,7 @@ export const details = {
     },
     {
       color: "border-rose-700 bg-rose-50",
+      spotlight: "rgb(190, 18, 60, 0.3)",
       logo: "bookling",
       github: "https://github.com/FrederickAurelio/Bookling",
       list: {
@@ -203,6 +205,7 @@ export const details = {
     },
     {
       color: "border-indigo-700 bg-indigo-50",
+      spotlight: "rgb(67, 56, 201, 0.3)",
       logo: "wildoasis",
       github: "https://github.com/FrederickAurelio/Realworld-React-Project",
       list: {
@@ -228,6 +231,7 @@ export const details = {
     },
     {
       color: "border-stone-800 bg-stone-200",
+      spotlight: "rgb(41, 37, 36, 0.3)",
       logo: "promis",
       github: "https://github.com/FrederickAurelio",
       list: {

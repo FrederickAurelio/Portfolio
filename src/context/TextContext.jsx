@@ -4,7 +4,7 @@ import { useLocalStorageState } from "../hooks/useLocalStorageState";
 const TextContext = createContext("");
 
 function TextLanguage({ children }) {
-  const [language, setLanguage] = useLocalStorageState("en", "language");
+  const [language, setLanguage] = useLocalStorageState("ch", "language");
   const changeLanguage = () => setLanguage((lg) => (lg === "en" ? "ch" : "en"));
 
   return (
