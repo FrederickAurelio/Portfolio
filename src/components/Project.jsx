@@ -1,7 +1,6 @@
 import { useLanguage } from "../context/TextContext";
 import { projects } from "../utils/data";
 import { HiChevronDown, HiMiniArrowUpRight } from "react-icons/hi2";
-import SpotlightCard from "./SpotlightCard";
 
 function Project({ project }) {
   const { language } = useLanguage();
